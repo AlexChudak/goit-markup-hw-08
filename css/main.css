@@ -768,6 +768,48 @@ textarea:focus, input:focus {
 }
 
 @media screen and (max-width: 1199px) {
+  .container.team {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container.team {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .container.features {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container.features {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .container.clients {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container.clients {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -801,24 +843,50 @@ textarea:focus, input:focus {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .features {
-    width: 450px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .features {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 354px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .features .item {
+    width: 450px;
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features .item {
+    width: 354px;
+    margin: 15px;
+  }
+  .features .item:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features .item {
     width: 270px;
+    margin: 0px;
+  }
+  .features .item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -879,12 +947,15 @@ textarea:focus, input:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
 @media screen and (min-width: 480px) {
   .ourteam-ul .item {
     width: 450px;
+    margin: 15px;
   }
 }
 
@@ -894,6 +965,9 @@ textarea:focus, input:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 15px;
   }
 }
 
@@ -903,6 +977,7 @@ textarea:focus, input:focus {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    margin: 0px;
   }
   .ourteam-ul .item.item + .item {
     margin-left: 30px;
@@ -920,18 +995,21 @@ textarea:focus, input:focus {
 @media screen and (min-width: 480px) {
   .clients .item {
     width: 210px;
+    margin: 15px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .clients .item {
     width: 226px;
+    margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .clients .item {
     width: 170px;
+    margin: 0px;
   }
   .clients .item.item + .item {
     margin-left: 30px;
@@ -976,10 +1054,6 @@ textarea:focus, input:focus {
   text-align: center;
   margin-top: 0px;
   margin-bottom: 50px;
-}
-
-.features .item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .features-fone {
@@ -1110,8 +1184,6 @@ textarea:focus, input:focus {
   -ms-flex-line-pack: center;
       align-content: center;
   padding-bottom: 24px;
-  padding-left: 32px;
-  padding-right: 32px;
 }
 
 .worker-links .item {
@@ -1140,6 +1212,14 @@ textarea:focus, input:focus {
 
 .worker-links .item:hover .icon {
   fill: white;
+}
+
+.clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .clients .item {

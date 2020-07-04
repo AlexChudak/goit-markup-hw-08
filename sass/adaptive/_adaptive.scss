@@ -11,6 +11,36 @@
         width:1200px;
     }
 }
+
+.container.team {
+    @media screen and (max-width:1199px){
+    padding-left:0px;
+    padding-right:0px;}
+    @media screen and (min-width:1200px){
+    padding-left:15px;
+    padding-right:15px;}
+}
+
+.container.features {
+    @media screen and (max-width:1199px){
+    padding-left:0px;
+    padding-right:0px;}
+
+    @media screen and (min-width:1200px){
+    padding-left:15px;
+    padding-right:15px;}
+}
+
+.container.clients {
+    @media screen and (max-width:1199px){
+    padding-left:0px;
+    padding-right:0px;}
+    
+    @media screen and (min-width:1200px){
+    padding-left:15px;
+    padding-right:15px;} 
+}
+
 // section
 .section {
     @media screen and (max-width: 1199px){
@@ -42,17 +72,39 @@
 }
 
 // Features
-
 .features {
+    
+        @media screen and (min-width:480px){
+            
+        }
+        @media screen and (min-width:768px){
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        @media screen and (min-width:1200px){
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+.features .item {
     @media screen and (min-width:480px){
         width:450px;
+        margin:15px;
     }
     @media screen and (min-width:768px){
-        display: flex;
+        &:not(:last-child) {
+            margin-right: 15px;}
         width:354px;
+        margin:15px;
+        
     }
     @media screen and (min-width:1200px){
+        &:not(:last-child) {
+            margin-right: 30px;}
         width:270px;
+        margin:0px;
     }
 }    
 .features-fone {
@@ -95,7 +147,8 @@
 }
 .ourteam-ul {
     @media screen and (min-width:768px){
-        display:flex; }
+        display:flex;
+        flex-wrap: wrap; }
 }
 
 
@@ -104,20 +157,30 @@
 .ourteam-ul .item {
     @media screen and (min-width:480px){
         width:450px;
+       
+        margin:15px;
     }
     @media screen and (min-width:768px){
         width:354px;
-        display:flex;    
+        display:flex;
+        flex-wrap: wrap;
+        margin:15px;
+         
+        
     }
     @media screen and (min-width:1200px){
         width:270px;
         display: inline-flex;
+        
+        margin: 0px;
 
         &.item + .item {
             margin-left: 30px;
           }
     }
 }
+
+
 
 // Наши клиенты
 
@@ -131,13 +194,16 @@
 .clients .item {
     @media screen and (min-width:480px){
         width:210px;
+        margin:15px;
     }
     @media screen and (min-width:768px){
         width:226px;
+        margin:15px;
             
     }
     @media screen and (min-width:1200px){
         width:170px;
+        margin:0px;
         
         &.item +.item {
             margin-left:30px;
