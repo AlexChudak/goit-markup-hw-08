@@ -11,7 +11,7 @@ footer {
   .footer-ul {
     padding-top: 48px;
   
-    display:flex;
+    // display:flex;
     align-items:center;
     justify-content:space-between;
   }
@@ -35,15 +35,30 @@ footer {
     font-style: normal;
 
     margin-top: 20px;
+    margin-bottom: 60px;
      
     &-link {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     }
 }
+.footer-links-title {
+
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
 .footer-links {
   display: flex;
   margin-top: 20px;
+  margin-bottom: 60px;
 
   .item {
     display: block;
@@ -95,6 +110,7 @@ width: 358px;
 height: 50px;
 
 margin-right: 12px;
+margin-bottom:20px;
 
 border: 1px solid rgba(255, 255, 255, 0.3);
 box-sizing: border-box;
@@ -104,7 +120,7 @@ border-radius: 4px;
 background-color: #2F303A;;
 }
 .email-container {
-  display: flex;
+  // display: flex;
   margin-top: 20px;
 
 }

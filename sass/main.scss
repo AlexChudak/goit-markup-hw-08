@@ -4,12 +4,13 @@
 @import"./components/footer";
 @import"./components/portfolio";
 @import"./components/modal";
+@import"./adaptive/adaptive";
 
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+// .section {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
 
 // Hero
 .cont .hero {
@@ -38,7 +39,7 @@
     color: $white-text-color;
 
     font-weight: 900;
-    font-size: 44px;
+    // font-size: 26px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
@@ -54,7 +55,7 @@
     color: $primary-text-color;
 
     font-weight:700;
-    font-size: 36px;
+    // font-size: 36px;
     line-height: 1.17;
     text-align: center;
   
@@ -65,21 +66,22 @@
 
 // Features
 .features {
-    display: flex; 
-    width: 270px; 
+    // display: flex; 
+    // width: 270px; 
 
     .item:not(:last-child) {
         margin-right: 30px;
       }
 
     &-fone {
-        width:270px;
+        // width:270px;
         height:120px;
         background-color: #F5F4FA;;
-        padding-left: 100px;
-        padding-right: 100px;
+        // padding-left: 100px;
+        // padding-right: 100px;
         padding-top: 25px;
         padding-bottom: 25px;
+        text-align: center;
         
         margin-bottom: 30px;   
     }
@@ -164,20 +166,20 @@
   }
 
   .ourteam-ul {
-    display:flex;
+    // display:flex;
 
   .item {
-    width: 270px;
-    display: inline-flex;
+    // width: 270px;
+    // display: inline-flex;
     flex-direction: column;
     background-color:$white-text-color;
 
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 0px 0px 4px 4px;
   }
-  .item + .item {
-    margin-left: 30px;
-  }
+  // .item + .item {
+  //   margin-left: 30px;
+  // }
 }
 
 .name {
@@ -192,6 +194,7 @@
     margin-bottom: 10px;
   }
   .position {
+    display: block;
     color: $secondary-text-color;
   
     font-size: 16px;
@@ -203,7 +206,7 @@
   // Ярлыки ссылки
   .worker-links {
     display:flex;
-    justify-content:space-evenly ;
+    // justify-content:space-evenly;
     align-content:center;
     padding-bottom: 24px;
     padding-left: 32px;
@@ -250,15 +253,15 @@
 
 .clients {
 
-  display:flex;
+  // display:flex;
 
-  .item +.item {
-    margin-left:30px;
-  }
+  // .item +.item {
+  //   margin-left:30px;
+  // }
 
   .item {
   display: block;
-  width: 170px;
+  // width: 170px;
   height: 90px;
   
   border: 1px solid #AFB1B8;
