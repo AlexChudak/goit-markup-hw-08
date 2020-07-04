@@ -185,9 +185,16 @@
 // Наши клиенты
 
 .clients {
-    @media screen and (min-width:1200px){
+    @media screen and (min-width:480px){
         display:flex;
+        flex-wrap:wrap;
     }
+    // @media screen and (min-width:768px){
+    //     display:flex;
+    // }
+    // @media screen and (min-width:1200px){
+    //     display:flex;
+    // }
 }
 
 
