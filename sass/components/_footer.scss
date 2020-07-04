@@ -59,6 +59,7 @@ color: #FFFFFF;
   display: flex;
   margin-top: 20px;
   margin-bottom: 60px;
+  justify-content: center;
 
   .item {
     display: block;
@@ -127,6 +128,9 @@ background-color: #2F303A;;
 .button-footer {
   // @extend %button;
   display: flex;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
   
   padding-left: 29px;
   padding-right: 29px;
