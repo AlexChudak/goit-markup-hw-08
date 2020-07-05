@@ -10,20 +10,70 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav class="container main-nav">
         <a class="logo" href="./index.html">
           <span><span class="web">Web</span>Studio</span>
         </a>
 
+
+        <!-- Меню бургер для мобилки -->
+        <button type="button" class="menu-button is-open" 
+        aria-expanded="false" 
+        aria-controls="menu-container"
+        data-menu-button>
+          <svg width="40px" height="40px" aria-label="переключатель главного меню" >
+            <use class="icon-cross" href="./images/symbol-defs.svg#icon-menu_40px" ></use>
+            <use class="icon-menu" href="./images/symbol-defs.svg#icon-close_40px" ></use>
+          </svg>
+
+        </button>
+
+      
+        <div class="menu-container" id="menu-container" data-menu>
+        
+         <ul class="site-nav">
+          <li class="item"><a href="" class="link-current">Студия</a></li>
+          <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+          <li class="item"><a href="" class="link">Контакты</a></li>
+        </ul>
+        <ul class="auth-nav">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link mail">
+           <svg class="icon-mail">
+              <use href="./images/symbol-defs.svg#icon-mail"></use>
+            </svg>info@devstudio.com</a>
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="link mob">
+              <svg class="icon-phone">
+                <use href="./images/symbol-defs.svg#icon-smartphone" >
+  
+                </use>
+              </svg>
+              
+              +38 096 111 11 11</a> 
+          </li>
+        </ul>
+
+        </div>
+
+
+
+
+
+
+
+<!-- меню навигации -->
+
+         <div class="menu-navi">
         <ul class="site-nav">
           <li class="item"><a href="" class="link-current">Студия</a></li>
           <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
           <li class="item"><a href="" class="link">Контакты</a></li>
         </ul>
       
-<!-- ><img src="./Images/envelope.png" alt="" />info@devstudio.com</a> -->
-      <ul class="auth-nav">
+        <ul class="auth-nav">
         <li class="item">
           <a href="mailto:info@devstudio.com" class="link mail">
          <svg class="icon-mail">
@@ -40,7 +90,8 @@
             
             +38 096 111 11 11</a> 
         </li>
-      </ul>
+        </ul>
+      </div>
     </nav>
     </header>
     
@@ -442,7 +493,8 @@
         </div>
       <p class="madeby">2020 | Developed by GoIT Students</p>
     </footer>
-    
+
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
